@@ -241,7 +241,7 @@ animation: pulse 1s ease-in-out infinite;
     display: none;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 380px) {
 #home{
    
     display: flex;
