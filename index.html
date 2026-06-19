@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Evangelista Barroso</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+  <header id="home" >
+
+    <h1>&lt;Mateus/&gt;</h1>
+    <nav>
+ 
+      <li><a href="#house" class="lar">Home</a></li>
+      <li><a href="#about" class="sobre">Sobre-mim</a></li>
+      <li><a href="#hard" class="skills">Hard skills</a></li>
+       <li><a href="#contato" class="contato">Contato</a></li>
+
+
+
+
+    </nav>
+        <span class="menu">
+
+    </span>
+  </header>
+  
+  <main>
+
+    <section id="house">
+      <div class="card" >
+          <span class="study">ESTUDANTE FRONTE-ND</span>
+
+
+          <h2>Mateus Evangelista Barroso</h2>
+
+            <div>
+              <span class="informacao-icon"> 
+                <span class="icon">
+
+                </span>
+                24anos |
+               <span>Brasil</span>
+              </span>
+                
+               
+
+
+            </div>
+        
+      </div>
+    </section>
+    <section id="about">
+         <h1 class="welcome">Olá, eu sou um Programdor júnior</h1>
+        <p>Cara, sou estudante de programação, faço faculdade na Uniasselvi <br>estou terminando o 1º semestre, estou apaixonado por essas tecnologias, que transforma vidas e empresas mais proxímas do cliente
+        </p>
+    </section>
+
+    <section id="hard">
+        <h3>Estou em treinamento</h3>
+        <p>Desenvolver hard skills é o que te tira do zero e te dá uma <br>profissão de verdade no mercado de tecnologia. Dominar <br>ferramentas como o <span class="laranja">HTML5 </span>e o CSS3 para estruturar e estilizar <br>páginas, junto com o JavaScript para criar interatividade no <br>front-end, é a base obrigatória de qualquer desenvolvedor. <br>Somando isso ao Python, você ganha superpoderes para criar <br>sistemas robustos no back-end, manipular dados e automatizar <br>processos. </p>
+        <div class="icones">
+           <img src="html.png" alt="  " class="html">
+           <img src="css.png" class="html" alt="">
+           <img src="js.png" alt="" class="html">
+           <img src="python.png" alt="" class="html">
+        </div>
+    </section>
+    <section id="contato">
+      <h2>Entre em contato pelo meu E-mail</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2026  Mateus Evangelista Barroso. Todos os direitos reservados </p>
+  </footer>
+  <script>
+    let nav = document.querySelector('nav')
+    let menu = document.querySelector(".menu");
+    console.log(menu)
+    menu.addEventListener('click', e=>{
+     nav.classList.toggle('show')
+    })
+  </script>
+</body>
+</html>

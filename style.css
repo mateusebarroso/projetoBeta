@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.menu{
+    background-image: url("./hamburger.png");
+    display: flex;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 800;
+  background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+   font-family: "Fascinate";
+    background-image: linear-gradient(270deg, #f97316, #ec4899, #8b5cf6);
+}
+.welcome{
+font-family: "Ubuntu", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+     padding: 20px;
+      border-radius: 0.5rem;
+      color: rgb(255, 255, 255);
+   letter-spacing: 0.2rem;
+    background: #8b5cf6;
+    transition: 400ms;
+    font-family: "Ubuntu";
+}
+
+.lar:hover{
+    letter-spacing: 0.2rem;
+     font-family: "Fascinate";
+    color: black;
+     background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+}
+
+.sobre:hover{
+    letter-spacing: 0.2rem;
+     font-family: "Fascinate";
+    color: black;
+     background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+}
+
+.skills:hover{
+    letter-spacing: 0.2rem;
+     font-family: "Fascinate";
+    color: black;
+     background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+}
+header{
+     width: 100%;
+   
+ 
+    
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+   
+    margin: 6px auto;
+    border-radius: 0.5rem;
+       height: 55px;
+ 
+
+}
+
+
+nav{
+    width: 100%;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+
+}
+
+li{
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+}
+
+a:hover{
+    letter-spacing: 0.2rem;
+    background: #8b5cf6;
+        color: white;
+  
+}
+    
+h2{
+    font-family: "Lobster Two";
+    font-size: 3em;
+    margin-top: 1em;
+}
+.study{
+    border-radius: 0.5rem;
+    font-size: 2em;
+    padding: 20px;
+  
+    font-family: "Fascinate";
+     background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+}
+.informacao-icon{
+  font-family: "Lobster Two";  
+  letter-spacing: 0.5rem;
+  display: flex;
+  font-size:2em;
+  margin-top: 1em;
+}
+.contato{
+    letter-spacing: 0.2rem;
+     font-family: "Fascinate";
+    color: black;
+     background-image: linear-gradient(71deg, #f97316, #ec4899, #8b5cf6);
+}
+
+main{
+width: 100%;
+ 
+
+}
+
+section {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 1.5rem 40px 1.5rem; /* Padding superior para não cobrir com o menu fixo */
+            position: relative;
+            
+            /* Evita que o topo da seção fique escondido atrás do menu fixo ao rolar */
+            scroll-margin-top: 70px; 
+          
+}
+
+section p{
+    font-size: 1.5em;
+}
+
+.icon{
+    width: 36px;
+    height: 36px;
+    background: url("./boy_36dp_1F1F1F_FILL0_wght400_GRAD0_opsz40.svg") no-repeat;
+    display: flex;
+
+}
+
+
+.card{
+    animation: pulse 1s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.html{
+    width: 48px;
+    height: 48px;
+   margin: 20px;
+  
+}
+#hard{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#hard p{
+    line-height: 1.6em;
+}
+#hard h3{
+    font-family: "Ubuntu";
+    font-size: 3em;
+    background-image: linear-gradient(10deg, #f97316, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-decoration: underline;
+
+}
+
+
+.icones {
+    width: 60%;
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-around;
+animation: pulse 1s ease-in-out infinite;
+  
+}
+@keyframes pulse {
+    0%, 100%{
+        transform: translateY(0) scale(1);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+      
+    }
+
+    50%{
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+         
+    }
+}
+
+
+.show{
+    display: none;
+}
+
+@media screen and (min-width: 400px) {
+#home{
+   
+    display: flex;
+    flex-direction: row;
+}
+nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:300px;
+    margin-top: 40px;
+}
+
+#house{
+ margin-top: 300px;
+}
+.icones {
+   width: 100%;
+}
+li a {
+    padding: 10px;
+}
+.menu{
+    position: absolute;
+    right: 20px;
+}
+}
